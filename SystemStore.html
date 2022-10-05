@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css.css" />
+    <title>System Store</title>
+</head>
+<body>
+
+    <button onclick="color()" class="set">^</button>
+ <div class="project">
+    <div class="head">
+       <h1>Pro<span>ject</span></h1>
+       <p>PROGECT <span>MANGMENT</span> SYSTEM</p>
+    </div>
+
+
+    <div class="input">
+
+        <input type="text" placeholder="title" id="title">
+        <div class="price">
+            <input onkeyup=" gettotal()" type="number" placeholder="price" id="price">
+            <input onkeyup=" gettotal()" type="number" placeholder="taxes" id="taxes">
+            <input onkeyup=" gettotal()" type="number" placeholder="ads" id="ads">
+            <input onkeyup=" gettotal()" type="number" placeholder="discount" id="discount">
+            <small id="total">0</small>
+        </div>
+        <input type="number" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+        <button id="btncreate">Create</button>
+    </div>
+
+
+
+    <div class="output">
+        <div class="searchbox">
+        <input onkeyup="searchdata(this.value)" type="text" placeholder="search" id="search">
+        <div class="search">
+            <button onclick="getsearch(this.id)" id="btntitle">Search By Title</button>
+            <button id="all"></button>
+            <button onclick="getsearch(this.id)" id="btncategory">Search By category</button>
+        </div>
+
+
+        
+    </div>
+
+
+    <table>
+        
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+    </div>
+
+
+
+ </div>
+<script src="script.js"></script>
+</body>
+</html>

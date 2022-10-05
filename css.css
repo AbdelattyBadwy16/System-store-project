@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.963);
+    color: white;
+}
+.project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.head{
+   margin: 15px;
+}
+
+.head p{
+    padding: 10px;
+    font-size: 20px;
+}
+
+span{
+    color: rgb(170, 0, 165);
+}
+
+
+input{
+    background-color: rgb(34, 32, 34);
+    height: 40px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+    width: 100%;
+}
+
+.price input{
+      width: 20%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+#total{
+    background-color: #a00d02;
+    padding: 10px 5px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+#total::before{
+    content: "total: ";
+}
+#total::after{
+    content: " EG";
+}
+#btncreate{
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(170, 0, 165) ;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white  ;
+    letter-spacing: 2px;
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+#btntitle,#btncategory{
+    width: 40%;
+    margin: 10px;
+    height: 50px;
+    background-color: rgb(170, 0, 165)   ;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#btnupde{
+    width: 70px;
+    height: 30px;
+    background-color:rgb(170, 0, 165)  ;
+    border-radius: 15px;
+    color: white;
+}
+
+th,td{
+    padding: 5px;
+}
+
+#all{
+    width: 50px;
+    border-radius: 50px;
+    background-color: rgb(170, 0, 165);
+    color: white;
+    cursor: default;
+    letter-spacing: 0px;
+}
+
+.set{
+    position: absolute;
+    right:  20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(170, 0, 165);
+    letter-spacing: 0px;
+}
